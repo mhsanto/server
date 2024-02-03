@@ -1,7 +1,7 @@
 // server.js
 const express = require("express");
 const db = require("./db");
-const app = express();
+const app = (module.exports = express());
 const port = 9000; // Choose your desired port
 const cors = require("cors");
 const corsOptions = {
