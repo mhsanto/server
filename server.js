@@ -22,10 +22,9 @@ const subcategoriesRoutes = require("./routes/sub_category");
 const duasRoutes = require("./routes/duas");
 
 // Use the routes
-app.use("/", (req, res) => res.send("Welcome to Dua API"));
-app.use("/categories", categoriesRoutes);
-app.use("/subcategories", subcategoriesRoutes);
-app.use("/duas", duasRoutes);
+app.use("/api/categories", categoriesRoutes);
+app.use("/api/subcategories", subcategoriesRoutes);
+app.use("/api/duas", duasRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
